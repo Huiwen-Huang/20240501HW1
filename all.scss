@@ -129,50 +129,59 @@ table {
 }
 //以上為 css reset
 body {
-  width: 1920px;
+  font-family: Noto Sans, sans-serif;
+  // 無論字體為何，都要備著 sans-serif (無襯線字體），確保所有裝置都能正確瀏覽唷。
 }
 .container {
   max-width: 1296px;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  .card {
-    margin-bottom: 80px;
-    img {
-      width: 636px;
-      height: 400px;
-      margin-bottom: 16px;
-      border-radius: 8px;
-    }
-    .content {
-      margin-left: 16px;
-      h2 {
-        font-size: 28px;
-        font-family: Noto Sans;
-        font-weight: 700;
-        line-height: 1.2;
-        margin-bottom: 8px;
+  // 通常只會有這兩項
+  padding-left: 12px;
+  padding-right: 12px;
+  // 可以預留左右空間
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card {
+      margin-bottom: 80px;
+      img {
+        width: 636px;
+        height: 400px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        display: block;
+        outline: solid #f0f0f0;
       }
-      p {
-        font-size: 16px;
-        font-family: Noto Sans;
-        font-weight: 400;
-        line-height: 1.5;
-        margin-bottom: 24px;
-        color: #919191;
-      }
-      ul {
-        display: flex;
-        li {
-          font-size: 16px;
-          font-family: Noto Sans;
+      .content {
+        margin-left: 16px;
+        h2 {
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 1.2;
+          margin-bottom: 8px;
+        }
+        p {
+          // font-size: 16px;
+          // line-height: 1.5;
+          // 系統預設
           font-weight: 400;
-          line-height: 1.5;
-          background-color: #f1f1f1;
-          padding: 4px 12px;
-          margin-right: 16px;
-          border-radius: 16px;
+          margin-bottom: 24px;
+          color: #919191;
+        }
+        .tag {
+          display: flex;
+          justify-content: start;
+          li {
+            // font-size: 16px;
+            // line-height: 1.5;
+            // 系統預設
+            font-weight: 400;
+            background-color: #f1f1f1;
+            padding: 4px 12px;
+            margin-right: 16px;
+            border-radius: 16px;
+          }
         }
       }
     }

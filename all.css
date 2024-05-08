@@ -134,51 +134,51 @@ table {
 }
 
 body {
-  width: 1920px;
+  font-family: Noto Sans, sans-serif;
 }
 
 .container {
   max-width: 1296px;
   margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.container ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.container .card {
+.container ul .card {
   margin-bottom: 80px;
 }
-.container .card img {
+.container ul .card img {
   width: 636px;
   height: 400px;
   margin-bottom: 16px;
   border-radius: 8px;
+  display: block;
+  outline: solid #f0f0f0;
 }
-.container .card .content {
+.container ul .card .content {
   margin-left: 16px;
 }
-.container .card .content h2 {
+.container ul .card .content h2 {
   font-size: 28px;
-  font-family: Noto Sans;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 8px;
 }
-.container .card .content p {
-  font-size: 16px;
-  font-family: Noto Sans;
+.container ul .card .content p {
   font-weight: 400;
-  line-height: 1.5;
   margin-bottom: 24px;
   color: #919191;
 }
-.container .card .content ul {
+.container ul .card .content .tag {
   display: flex;
+  justify-content: start;
 }
-.container .card .content ul li {
-  font-size: 16px;
-  font-family: Noto Sans;
+.container ul .card .content .tag li {
   font-weight: 400;
-  line-height: 1.5;
   background-color: #f1f1f1;
   padding: 4px 12px;
   margin-right: 16px;
